@@ -146,6 +146,17 @@ angular.module('app')
                       }]
                   }
               })
+              .state('app.echart', {
+                  url: '/echart',
+                  templateUrl: 'tpl/echart.html',
+                  controller:'UserCtrl',
+                  resolve: {
+                      deps: ['$ocLazyLoad',
+                        function( $ocLazyLoad ){
+                          return $ocLazyLoad.load('js/controllers/userCtrl.js');
+                      }]
+                  }
+              })
               // table
               .state('app.table', {
                   url: '/table',
@@ -219,7 +230,7 @@ angular.module('app')
                   templateUrl: 'tpl/form_imagecrop.html',
                   resolve: {
                       deps: ['$ocLazyLoad',
-                        function( $ocLazyLoad){
+                        function( $ocLazyLoad){ 
                           return $ocLazyLoad.load('ngImgCrop').then(
                               function(){
                                  return $ocLazyLoad.load('js/controllers/imgcrop.js');
@@ -280,7 +291,14 @@ angular.module('app')
               })
               .state('app.page.profile', {
                   url: '/profile',
-                  templateUrl: 'tpl/page_profile.html'
+                  templateUrl: 'tpl/page_profile.html',
+                  controller:'UserProfileCtrl',
+                  resolve: {
+                      deps: ['uiLoad',
+                        function( uiLoad){
+                          return uiLoad.load('js/controllers/userprofile.js');
+                      }]
+                  }
               })
               .state('app.page.post', {
                   url: '/post',

@@ -46,6 +46,7 @@
         "FORM_WIZARD" : "Creazione guidata maschera"
       },
       "CHART" : "Grafico",
+      "ECHART" : "EGrafico",
       "pages" : {
         "PAGES" : "Pagine",
         "PROFILE" : "Profilo",

@@ -146,6 +146,17 @@ angular.module('app')
                       }]
                   }
               })
+              .state('app.echart', {
+                  url: '/echart',
+                  templateUrl: 'tpl/echart.html',
+                  controller:'UserCtrl',
+                  resolve: {
+                      deps: ['$ocLazyLoad',
+                        function( $ocLazyLoad ){
+                          return $ocLazyLoad.load('js/controllers/userCtrl.js');
+                      }]
+                  }
+              })
               // table
               .state('app.table', {
                   url: '/table',

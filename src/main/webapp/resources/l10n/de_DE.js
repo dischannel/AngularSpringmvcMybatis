@@ -46,6 +46,7 @@
         "FORM_WIZARD" : "Form wizard"
       },
       "CHART" : "Diagramm",
+      "ECHART" : "EDiagramm",
       "pages" : {
         "PAGES" : "Seiten",
         "PROFILE" : "Profil",

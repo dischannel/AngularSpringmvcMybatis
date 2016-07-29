@@ -18,10 +18,14 @@
     "HEADER" : "Navigation",
     "DASHBOARD" : "Dashboard",
     "CALENDAR" : "Calendar",
+    "MEG" : "Meg Message",
     "EMAIL" : "Email",
     "WIDGETS" : "Widgets",
     "components" : {
       "COMPONENTS" : "Components",
+      "MESSAGES" : "Messages",
+      "FUNCTION" : "Function",
+      "BACKUP" : "Backup",
       "ui_kits" : {
         "UI_KITS" : "UI Kits",
         "BUTTONS" : "Buttons",

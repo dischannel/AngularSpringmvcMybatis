@@ -17,11 +17,15 @@
   "nav" : {
     "HEADER" : "Navigazione",
     "DASHBOARD" : "Cruscotto",
+    "MEG" : "留言板",
     "CALENDAR" : "Calendario",
     "EMAIL" : "Email",
     "WIDGETS" : "Widgets",
     "components" : {
       "COMPONENTS" : "Componenti",
+      "MESSAGES" : "留言",
+      "FUNCTION" : "功能",
+      "BACKUP" : "Backup",
       "ui_kits" : {
         "UI_KITS" : "Kit UI",
         "BUTTONS" : "Pulsanti",

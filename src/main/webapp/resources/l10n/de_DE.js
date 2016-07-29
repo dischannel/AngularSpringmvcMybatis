@@ -17,11 +17,15 @@
   "nav" : {
     "HEADER" : "Navigation",
     "DASHBOARD" : "Armaturenbrett",
+    "MEG" : "Meg Message",
     "CALENDAR" : "Kalender",
     "EMAIL" : "E-Mail",
     "WIDGETS" : "Widgets",
     "components" : {
       "COMPONENTS" : "Komponenten",
+      "MESSAGES" : "Messages",
+      "FUNCTION" : "Function",
+      "BACKUP" : "Backup",
       "ui_kits" : {
         "UI_KITS" : "UI Kits",
         "BUTTONS" : "Knöpfe",

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2016 11:26:44 AM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.alex.hibernate.pojo.SimpleProductInfo" table="simple_product_info" catalog="db_news" optimistic-lock="version">
+        <composite-id name="id" class="com.alex.hibernate.pojo.SimpleProductInfoId">
+            <key-property name="purchaseId" type="string">
+                <column name="purchase_id" length="65535" />
+            </key-property>
+            <key-property name="brandOrder" type="string">
+                <column name="brand_order" length="65535" />
+            </key-property>
+            <key-property name="description" type="string">
+                <column name="description" length="65535" />
+            </key-property>
+            <key-property name="subcategoryId" type="string">
+                <column name="subcategory_id" length="65535" />
+            </key-property>
+            <key-property name="purchaseType" type="string">
+                <column name="purchase_type" length="65535" />
+            </key-property>
+            <key-property name="favoritesCount" type="java.lang.Integer">
+                <column name="favorites_count" />
+            </key-property>
+            <key-property name="createdAt" type="string">
+                <column name="created_at" length="65535" />
+            </key-property>
+            <key-property name="purchaseUrl" type="string">
+                <column name="purchase_url" length="65535" />
+            </key-property>
+            <key-property name="purchaseStatus" type="string">
+                <column name="purchase_status" length="65535" />
+            </key-property>
+            <key-property name="imageUrls" type="string">
+                <column name="image_urls" length="65535" />
+            </key-property>
+            <key-property name="updatedAt" type="string">
+                <column name="updated_at" length="65535" />
+            </key-property>
+            <key-property name="price" type="string">
+                <column name="price" length="65535" />
+            </key-property>
+            <key-property name="brandId" type="string">
+                <column name="brand_id" length="65535" />
+            </key-property>
+            <key-property name="isFavorite" type="string">
+                <column name="is_favorite" length="65535" />
+            </key-property>
+            <key-property name="url" type="string">
+                <column name="url" length="65535" />
+            </key-property>
+            <key-property name="coverImageUrl" type="string">
+                <column name="cover_image_url" length="65535" />
+            </key-property>
+            <key-property name="postIds" type="string">
+                <column name="post_ids" length="65535" />
+            </key-property>
+            <key-property name="categoryId" type="string">
+                <column name="category_id" length="65535" />
+            </key-property>
+            <key-property name="editorId" type="java.lang.Integer">
+                <column name="editor_id" />
+            </key-property>
+            <key-property name="id" type="java.lang.Integer">
+                <column name="id" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="name" length="65535" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

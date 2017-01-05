@@ -40,6 +40,8 @@
       "table" : {
         "TABLE" : "Tavolo",
         "TABLE_STATIC" : "Tabella statico",
+        "MAIN_FCATE" : "Maintain Fcategory",
+        "MAIN_SPROD" : "Maintain SProd",
         "DATATABLE" : "Datatable",
         "FOOTABLE" : "Footable"
       },

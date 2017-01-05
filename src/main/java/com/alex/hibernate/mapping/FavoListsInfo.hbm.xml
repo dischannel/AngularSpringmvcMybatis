@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2016 11:26:44 AM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.alex.hibernate.pojo.FavoListsInfo" table="favo_lists_info" catalog="db_news" optimistic-lock="version">
+        <composite-id name="id" class="com.alex.hibernate.pojo.FavoListsInfoId">
+            <key-property name="itemsCount" type="java.lang.Integer">
+                <column name="items_count" />
+            </key-property>
+            <key-property name="userId" type="java.lang.Integer">
+                <column name="user_id" />
+            </key-property>
+            <key-property name="description" type="string">
+                <column name="description" length="65535" />
+            </key-property>
+            <key-property name="url" type="string">
+                <column name="url" length="65535" />
+            </key-property>
+            <key-property name="createdAt" type="string">
+                <column name="created_at" length="65535" />
+            </key-property>
+            <key-property name="updatedAt" type="string">
+                <column name="updated_at" length="65535" />
+            </key-property>
+            <key-property name="publicc" type="string">
+                <column name="publicc" length="65535" />
+            </key-property>
+            <key-property name="headImageUrl" type="string">
+                <column name="head_image_url" length="65535" />
+            </key-property>
+            <key-property name="coverImageUrl" type="string">
+                <column name="cover_image_url" length="65535" />
+            </key-property>
+            <key-property name="id" type="java.lang.Integer">
+                <column name="id" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="name" length="65535" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

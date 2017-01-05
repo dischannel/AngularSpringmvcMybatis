@@ -1,0 +1,62 @@
+<div class="bg-light lter b-b wrapper-md">
+  <h1 class="m-n font-thin h3">Maintain First Page Category</h1>
+</div>
+<div class="wrapper-md" >
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="panel panel-default">
+        <div class="panel-heading font-bold">Simple Product Information</div>
+        <div class="panel-body">
+          <form role="form">
+            <div class="form-group">
+              <label>ID</label>
+              <input type="text" class="form-control" placeholder="Table ID" ng-model="mySelections[0].id">
+            </div>
+            <div class="form-group">
+              <label>Name</label>
+              <input type="text" class="form-control" placeholder="Name" ng-model="mySelections[0].name">
+            </div>
+            <div class="form-group">
+              <label>Cover Image URL</label>
+              <input type="text" class="form-control" placeholder="Cover Image URL" ng-model="mySelections[0].coverImageUrl">
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <input type="text" class="form-control" placeholder="Description" ng-model="mySelections[0].description">
+            </div>
+            <div class="form-group">
+              <label>Image URL</label>
+              <input type="text" class="form-control" placeholder="Image URL" ng-model="mySelections[0].imageUrls">
+            </div>            
+            <div class="form-group">
+              <label>Price</label>
+              <input type="text" class="form-control" placeholder="Name" ng-model="mySelections[0].price">
+            </div>
+             <div class="form-group">
+              <label>Purchase URL</label>
+              <input type="text" class="form-control" placeholder="Purchase URL" ng-model="mySelections[0].purchaseUrl">
+            </div>           
+             <div class="form-group">
+              <label>URL</label>
+              <input type="text" class="form-control" placeholder="URL" ng-model="mySelections[0].url">
+            </div>
+                        
+            <button type="submit" class="btn btn-sm btn-primary" ng-click = "submit()">Submit</button>
+            <button type="submit" class="btn btn-sm btn-primary" ng-click = "removeInfo()">Remove</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="wrapper-md" >
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      Simple Product Information
+    </div>
+    <div class="table-responsive">
+      <div ng-grid="gridOptions" style="min-height:420px"></div>
+    </div>
+  </div>
+</div>

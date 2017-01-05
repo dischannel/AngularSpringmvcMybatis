@@ -166,6 +166,36 @@ angular.module('app')
                   url: '/static',
                   templateUrl: 'tpl/table_static.html'
               })
+             .state('app.table.manfirstcate', {
+                  url: '/manfirstcate',
+                  templateUrl: 'tpl/man_first_cate.html',
+                  controller:'MainFCategory',
+	             resolve: {
+	                 deps: ['$ocLazyLoad',
+	                   function( $ocLazyLoad ){
+	                     return $ocLazyLoad.load('ngGrid').then(
+	                         function(){
+	                             return $ocLazyLoad.load('js/controllers/main_first_page_cate.js');
+	                         }
+	                     );
+	                 }]
+	             }
+              })
+              .state('app.table.mainsprod', {
+                  url: '/mainsprod',
+                  templateUrl: 'tpl/man_simple_product.html',
+                  controller:'MainSProduct',
+	             resolve: {
+	                 deps: ['$ocLazyLoad',
+	                   function( $ocLazyLoad ){
+	                     return $ocLazyLoad.load('ngGrid').then(
+	                         function(){
+	                             return $ocLazyLoad.load('js/controllers/main_simple_product.js');
+	                         }
+	                     );
+	                 }]
+	             }
+              })
               .state('app.table.datatable', {
                   url: '/datatable',
                   templateUrl: 'tpl/table_datatable.html'

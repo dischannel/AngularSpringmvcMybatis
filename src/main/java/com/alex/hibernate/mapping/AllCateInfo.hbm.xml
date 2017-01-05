@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2016 11:26:44 AM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.alex.hibernate.pojo.AllCateInfo" table="all_cate_info" catalog="db_news" optimistic-lock="version">
+        <composite-id name="id" class="com.alex.hibernate.pojo.AllCateInfoId">
+            <key-property name="status" type="string">
+                <column name="status" length="65535" />
+            </key-property>
+            <key-property name="subtitle" type="string">
+                <column name="subtitle" length="65535" />
+            </key-property>
+            <key-property name="title" type="string">
+                <column name="title" length="65535" />
+            </key-property>
+            <key-property name="createdAt" type="string">
+                <column name="created_at" length="65535" />
+            </key-property>
+            <key-property name="updatedAt" type="string">
+                <column name="updated_at" length="65535" />
+            </key-property>
+            <key-property name="id" type="java.lang.Integer">
+                <column name="id" />
+            </key-property>
+            <key-property name="coverImageUrl" type="string">
+                <column name="cover_image_url" length="65535" />
+            </key-property>
+            <key-property name="bannerImageUrl" type="string">
+                <column name="banner_image_url" length="65535" />
+            </key-property>
+            <key-property name="postsCount" type="java.lang.Integer">
+                <column name="posts_count" />
+            </key-property>
+            <key-property name="createdAt_1" type="string">
+                <column name="createdAt" length="20" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

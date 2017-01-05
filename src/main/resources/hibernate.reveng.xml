@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+  <table-filter match-name=".*"/>
+  <table-filter match-catalog="db_news" match-name="all_cate_info"/>
+  <table-filter match-catalog="db_news" match-name="cate_page_info"/>
+  <table-filter match-catalog="db_news" match-name="favo_lists_info"/>
+  <table-filter match-catalog="db_news" match-name="first_page_ads_info"/>
+  <table-filter match-catalog="db_news" match-name="first_page_cate_info"/>
+  <table-filter match-catalog="db_news" match-name="list_page_info"/>
+  <table-filter match-catalog="db_news" match-name="main_menu_info"/>
+  <table-filter match-catalog="db_news" match-name="message_info"/>
+  <table-filter match-catalog="db_news" match-name="simple_product_info"/>
+  <table-filter match-catalog="db_news" match-name="t_user"/>
+</hibernate-reverse-engineering>

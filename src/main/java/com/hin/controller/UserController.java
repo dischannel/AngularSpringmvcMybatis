@@ -25,6 +25,12 @@ public class UserController {
         return userService.getAllUsers();
     }
 
+	@RequestMapping("/all_cate.json")
+    public @ResponseBody List<User> getAllCateList() {
+        return userService.getAllUsers();
+    }
+
+	
 //    @RequestMapping(value = "/addUser/{userName}", method = RequestMethod.POST)
 //    public @ResponseBody void addUser(@PathVariable("userName") String userName) {
 //    	userService.addUser(userName);

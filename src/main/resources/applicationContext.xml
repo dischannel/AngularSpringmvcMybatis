@@ -65,6 +65,29 @@
     </property>
     <!-- 自动扫描实体对象 tdxy.bean的包结构中存放实体类 -->
     <property name="packagesToScan" value="com.alex.entity" />
+    
+    <property name="mappingResources">
+		<list>
+		<value>com/alex/hibernate/mapping/Account.hbm.xml</value>
+		
+		<value>com/alex/hibernate/mapping/Banner.hbm.xml</value>
+		
+		<value>org/springframework/samples/jpetstore/domain/Category.hbm.xml</value>
+		
+		<value>org/springframework/samples/jpetstore/domain/Inventory.hbm.xml</value>
+		
+		<value>org/springframework/samples/jpetstore/domain/Item.hbm.xml</value>
+		
+		<value>org/springframework/samples/jpetstore/domain/LineItem.hbm.xml</value>
+		
+		<value>org/springframework/samples/jpetstore/domain/Order.hbm.xml</value>
+		
+		<value>org/springframework/samples/jpetstore/domain/Product.hbm.xml</value>
+		
+		<value>org/springframework/samples/jpetstore/domain/Supplier.hbm.xml</value>
+		</list>
+</property>
+    
   </bean>
  
 
@@ -80,7 +103,9 @@
 <tx:method name="save*" propagation="REQUIRED"/> 
 <tx:method name="add*" propagation="REQUIRED"/> 
 <tx:method name="create*" propagation="REQUIRED"/> 
-<tx:method name="insert*" propagation="REQUIRED"/> 
+<tx:method name="insert*" propagation="REQUIRED"/>
+<tx:method name="submit*" propagation="REQUIRED"/>  
+<tx:method name="remove*" propagation="REQUIRED"/>  
 <tx:method name="*" read-only="true" /> 
 </tx:attributes> 
 </tx:advice> 

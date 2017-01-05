@@ -40,6 +40,8 @@
       "table" : {
         "TABLE" : "Tabelle",
         "TABLE_STATIC" : "Tabelle statisch",
+        "MAIN_FCATE" : "Maintain Fcategory",
+        "MAIN_SPROD" : "Maintain SProd",
         "DATATABLE" : "Datatable",
         "FOOTABLE" : "Footable"
       },

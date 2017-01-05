@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 5, 2016 11:26:44 AM by Hibernate Tools 4.3.1.Final -->
+<hibernate-mapping>
+    <class name="com.alex.hibernate.pojo.FirstPageCateInfo" table="first_page_cate_info" catalog="db_news" optimistic-lock="version">
+        <composite-id name="id" class="com.alex.hibernate.pojo.FirstPageCateInfoId">
+            <key-property name="editable" type="string">
+                <column name="editable" length="65535" />
+            </key-property>
+            <key-property name="id" type="java.lang.Integer">
+                <column name="id" />
+            </key-property>
+            <key-property name="name" type="string">
+                <column name="name" length="65535" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

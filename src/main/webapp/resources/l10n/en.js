@@ -16,7 +16,7 @@
 "aside" : {
   "nav" : {
     "HEADER" : "Navigation",
-    "DASHBOARD" : "Dashboard",
+    "DASHBOARD" : "ARP Dashboard",
     "CALENDAR" : "Calendar",
     "MEG" : "Meg Message",
     "EMAIL" : "Email",
@@ -27,30 +27,32 @@
       "FUNCTION" : "Function",
       "BACKUP" : "Backup",
       "ui_kits" : {
-        "UI_KITS" : "UI Kits",
-        "BUTTONS" : "Buttons",
-        "ICONS" : "Icons",
-        "GRID" : "Grid",
+        "UI_KITS" : "ARP Kits",
+        "BUTTONS" : "Invoice",
+        "ICONS" : "Tax Invoice",
+        "GRID" : "Search",
         "BOOTSTRAP" : "Bootstrap",
         "SORTABLE" : "Sortable",
-        "PORTLET" : "Portlet",
-        "TIMELINE" : "Timeline",
-        "VECTOR_MAP" : "Vector Map"
+        "PORTLET" : "ARP Invoice",
+        "TIMELINE" : "CCSV",
+        "VECTOR_MAP" : "DMSA"
       },
       "table" : {
-        "TABLE" : "Table",
-        "TABLE_STATIC" : "Table static",
-        "DATATABLE" : "Datatable",
-        "FOOTABLE" : "Footable"
+        "TABLE" : "AM",
+        "TABLE_STATIC" : "AM static",
+        "MAIN_FCATE" : "Maintain Fcategory",
+        "MAIN_SPROD" : "Maintain SProd",
+        "DATATABLE" : "AM Datatable",
+        "FOOTABLE" : "AM Footable"
       },
       "form" : {
-        "FORM" : "Form",
-        "FORM_ELEMENTS" : "Form elements",
-        "FORM_VALIDATION" : "Form validation",
-        "FORM_WIZARD" : "Form wizard"
+        "FORM" : "Invoice",
+        "FORM_ELEMENTS" : "Invoice elements",
+        "FORM_VALIDATION" : "Invoice validation",
+        "FORM_WIZARD" : "Invoice wizard"
       },
-      "CHART" : "Chart",
-      "ECHART" : "EChart",
+      "CHART" : "Data Chart",
+      "ECHART" : "Test Chart",
       "pages" : {
         "PAGES" : "Pages",
         "PROFILE" : "Profile",
